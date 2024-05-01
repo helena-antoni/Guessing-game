@@ -1,3 +1,29 @@
 *{
-    background-color:grey;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(288deg, #C2E9FB 0%, #A1C4FD 100%);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main{ 
+    width: min(42.8rem, 90%); 
+
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    background: #FFF; 
+    box-shadow: 0rem .2rem .4rem 0rem rgba(0, 0, 0, 0.1); 
+    border-radius: .6rem;
+    
+    margin-top:-12rem;
 }
