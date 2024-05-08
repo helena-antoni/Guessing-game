@@ -6,6 +6,16 @@
 
 :root{
     font-size: 62.5%;
+    --color-main-h1: #34355B; 
+    --form-button-background: #7879F1;
+    --form-input: #DCE2E9;
+    --color-white: #FFF;
+
+}
+
+body, button, input{
+    font-family: "DM Sans", sans-serif;
+
 }
 
 body{
@@ -21,9 +31,54 @@ main{
 
     padding: 4.8rem 6.4rem 6.4rem;
 
-    background: #FFF; 
+    background: var(--color-white); 
     box-shadow: 0rem .2rem .4rem 0rem rgba(0, 0, 0, 0.1); 
     border-radius: .6rem;
     
     margin-top:-12rem;
+
+    text-align: center;
+
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+ 
+}
+main h1, main p{
+    color:var(--color-main-p);
+}
+
+p{
+    opacity: 0.8;
+}
+
+form{
+    margin-top: 4.8rem;
+    display: flex;
+
+    justify-content: center;
+}
+
+input, button{
+    border: none;
+    padding: 1.6rem;
+}
+
+input{
+    background-color: var(--form-input) ;
+    width: 8rem;
+    border-radius:0.4rem  0 0 0.4rem ; 
+
+}
+input:focus{
+    outline: none; 
+} 
+button{
+    background-color:  var(--form-button-background);
+    color: var(--color-white);
+    font-weight: bold;  
+    border-radius: 0 0.4rem  0.4rem 0;
 }
