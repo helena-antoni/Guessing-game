@@ -7,7 +7,8 @@
 :root{
     font-size: 62.5%;
     --color-main-h1: #34355B; 
-    --form-button-background: #7879F1;
+    --form-button: #7879F1;
+    --form-button-hover: #6565ca;
     --form-input: #DCE2E9;
     --color-white: #FFF;
 
@@ -18,12 +19,30 @@ body, button, input{
 
 }
 
+button{
+    background-color: var(--form-button);
+    color: var(--color-white);
+    font-weight: bold;
+    border-radius: 0 0.4rem .4rem 0;
+    cursor: pointer;
+
+    transition: background .3s;
+}
+
+button:hover{
+    background-color: var(--form-button-hover);
+} 
+
 body{
     background: linear-gradient(288deg, #C2E9FB 0%, #A1C4FD 100%);
     font-size: 1.6rem;
     display: grid;
     place-items: center;
     height: 100vh;
+}
+
+.hide{
+    display: none;
 }
 
 main{ 
@@ -40,7 +59,7 @@ main{
     text-align: center;
 
 }
-
+ /*Screen 1*/
 h1{
     font-family: "Montserrat", sans-serif;
     font-size: 2.4rem;
@@ -48,7 +67,7 @@ h1{
  
 }
 main h1, main p{
-    color:var(--color-main-p);
+    color:var(--color-main-h1);
 }
 
 p{
@@ -75,10 +94,16 @@ input{
 }
 input:focus{
     outline: none; 
-} 
-button{
-    background-color:  var(--form-button-background);
-    color: var(--color-white);
-    font-weight: bold;  
-    border-radius: 0 0.4rem  0.4rem 0;
+}  
+/*Screen2*/
+h2{
+    font-size:2.4rem;
+    font-weight: normal;
+
+    margin-bottom: 3.3rem;
+    color: var(--color-main-h1);
+}
+
+.screen2 button{
+    border-radius: .4rem;
 }
