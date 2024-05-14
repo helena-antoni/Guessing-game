@@ -21,6 +21,11 @@ Projeto de Adivinhação de um número de 0 a 10.
   <img alt="print da tela do jogo" src="./preview/preview.png" width="100%">
 </p>
 
+
+## 🔗 Link de acesso do Deploy
+Acesse através deste link [DESSE LINK](https://helena-antoni.github.io/Guessing-game).
+
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
