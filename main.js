@@ -5,10 +5,9 @@ const randomNumber =  Math.round(Math.random() * 10) ;
 console.log(randomNumber)
 let xAttempts = 1
 
-
-//função callback ==> chamar de volta
+inputNumber = Number
 function handleTryClick(event){
-    event.preventDefault()//nao faça o padrão 
+    event.preventDefault() 
 
     const inputNumber = document.querySelector('#inputNumber')
     console.log(inputNumber.value)
@@ -16,9 +15,9 @@ function handleTryClick(event){
     if(Number(inputNumber.value) == (randomNumber)){
         screen1.classList.add("hide")
         screen2.classList.remove("hide")
-        document
-            .querySelector(".screen2 h2")
-            .innerHTML =  `Parabéns! O número é o ${randomNumber}
+        
+        screen2.querySelector("h2")
+            .innerHTML = `Parabéns! O número é o ${randomNumber}
             Você acertou em ${xAttempts} tentativas` 
     } 
 
@@ -26,7 +25,7 @@ function handleTryClick(event){
     xAttempts++;
 }  
 
-//Eventos
+//Events
 const btnTry = document.querySelector('#btnTry')
 const btnReset = document.querySelector('#btnReset')
 
@@ -37,3 +36,4 @@ btnReset.addEventListener('click', function(){
     xAttempts = 1
 }
 )
+                                               
