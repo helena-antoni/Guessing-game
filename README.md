@@ -23,7 +23,7 @@ Projeto de Adivinhação de um número de 0 a 10.
 
 
 ## 🔗 Link de acesso do Deploy
-Acesse através deste link [DESSE LINK](https://helena-antoni.github.io/Guessing-game).
+Acesse através deste link [Jogo de Adivinhação](https://helena-antoni.github.io/Guessing-game).
 
 
 ## 🚀 Tecnologias
